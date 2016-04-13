@@ -1,7 +1,7 @@
 #N canvas 366 26 500 429 10;
 #X obj 86 263 +~;
 #X obj 116 227 *~ 140;
-#X floatatom 165 198 5 0 0 0 - - -, f 5;
+#X floatatom 165 172 5 0 0 0 - - -, f 5;
 #X obj 116 165 osc~ 1;
 #X floatatom 114 70 5 0 0 0 - - -, f 5;
 #X floatatom 54 140 5 0 0 0 - - -, f 5;
@@ -19,7 +19,7 @@
 #X obj 225 26 inlet;
 #X obj 279 205 t b;
 #X obj 158 14 r modulator;
-#X obj 166 171 r moddepth;
+#X obj 166 145 r moddepth;
 #X obj 294 148 *~;
 #X obj 391 102 r randdepth;
 #X obj 115 124 +~;
@@ -31,12 +31,13 @@
 #X obj 289 124 lop~ 5;
 #X obj 283 8 loadbang;
 #X msg 358 26 1;
-#X msg 210 240 0 250;
-#X msg 266 244 1 250;
 #X obj 134 28 abs;
+#X msg 266 242 1 50;
+#X obj 169 198 clip 0 20000;
+#X msg 210 240 0 100;
 #X connect 0 0 6 0;
 #X connect 1 0 0 1;
-#X connect 2 0 1 1;
+#X connect 2 0 33 0;
 #X connect 3 0 1 0;
 #X connect 4 0 23 0;
 #X connect 5 0 0 0;
@@ -46,10 +47,10 @@
 #X connect 10 0 11 0;
 #X connect 10 0 18 0;
 #X connect 11 0 4 0;
-#X connect 13 0 33 0;
+#X connect 13 0 31 0;
 #X connect 14 0 12 0;
 #X connect 15 0 14 1;
-#X connect 16 0 31 0;
+#X connect 16 0 34 0;
 #X connect 17 0 16 0;
 #X connect 18 0 32 0;
 #X connect 19 0 13 0;
@@ -64,6 +65,7 @@
 #X connect 28 0 21 0;
 #X connect 29 0 30 0;
 #X connect 30 0 24 0;
-#X connect 31 0 15 0;
+#X connect 31 0 11 1;
 #X connect 32 0 15 0;
-#X connect 33 0 11 1;
+#X connect 33 0 1 1;
+#X connect 34 0 15 0;
