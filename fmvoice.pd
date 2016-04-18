@@ -37,7 +37,6 @@
 #X msg 210 240 0 100;
 #X obj 165 203 +;
 #X obj 201 175 receive mod_from_velocity;
-#X floatatom 338 213 5 0 0 0 - - -, f 5;
 #X floatatom 170 233 5 0 0 0 - - -, f 5;
 #X connect 0 0 6 0;
 #X connect 1 0 0 1;
@@ -74,6 +73,5 @@
 #X connect 33 0 35 1;
 #X connect 34 0 15 0;
 #X connect 35 0 1 1;
-#X connect 35 0 38 0;
+#X connect 35 0 37 0;
 #X connect 36 0 35 0;
-#X connect 36 0 37 0;
