@@ -1,4 +1,4 @@
-#N canvas 452 23 1089 613 10;
+#N canvas 1800 144 1089 613 10;
 #X obj -155 -85 receive fromGUI;
 #X obj -155 -57 list trim;
 #X obj -154 -32 route /mt;
@@ -403,7 +403,7 @@ on position.;
 #X text 702 5 contains which notes to play;
 #X text 530 -26 every touch sends XY and thus note position to an fmvoice
 abstraction \, playing a note.;
-#X text 222 71 acelleration makes for more delay;
+#X text 246 288 acelleration makes for more delay;
 #X text 38 294 OUT TO DAC!;
 #X text 56 -30 take the mean position of ALL X and Y's;
 #X text -116 100 calculate vel \, dir \, quadrant and activity;
