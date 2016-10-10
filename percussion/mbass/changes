@@ -1,0 +1,11 @@
+o DSP switching
+
+o Removed ostensibly superfluous controls (Freq. Attack [now 1ms],
+  Amp. Decay[now 170ms])
+
+o Sharper low pass filter
+
+o Improved sync click suppression.
+
+o Combined the sustain-duration and trigger inputs
+
